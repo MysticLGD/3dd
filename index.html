@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite 3D Voxel Engine</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/simplex-noise/2.4.0/simplex-noise.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <div id="container"></div>
+  <div id="info">
+    <div id="controls">
+      <span class="control" id="wasd-control">WASD: Move</span>
+      <span class="control" id="mouse-control">Mouse: Look</span>
+      <span class="control" id="space-control">Space: Jump/Ascend</span>
+      <span class="control" id="shift-control">Shift: Run/Descend</span>
+      <span class="control" id="f-control">F: Toggle Flight</span>
+    </div>
+    <div id="stats">
+      FPS: <span id="fps">0</span> | Pos: <span id="coords">0, 0, 0</span> | Biome: <span id="biome">unknown</span>
+    </div>
+  </div>
+</body>
+</html>

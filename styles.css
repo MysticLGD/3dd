@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  width: 100vw;
+  height: 100vh;
+}
+
+#info {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+#controls {
+  margin-bottom: 8px;
+  transition: opacity 0.3s;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.control {
+  transition: all 0.3s ease;
+  opacity: 1;
+  max-width: 150px;
+  white-space: nowrap;
+}
+
+.hidden {
+  opacity: 0;
+  max-width: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+#stats {
+  white-space: nowrap;
+}
